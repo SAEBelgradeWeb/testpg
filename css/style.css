@@ -1,0 +1,52 @@
+ul {
+	margin: 0;
+	padding:0;
+	cursor: pointer;
+}
+
+ul li {
+	display: inline-block;
+/*	border: 1px solid red;*/
+
+}
+
+li:nth-child(1){
+	background-image: url(../images/auto1.png);
+}
+li:nth-child(2){
+	background-image: url(../images/auto2.png);
+}
+li:nth-child(3){
+	background-image: url(../images/auto3.png);
+}
+li:nth-child(4){
+	background-image: url(../images/auto4.png);
+}
+li:nth-child(5){
+	background-image: url(../images/auto5.png);
+}
+
+ul li div {
+	float: left;
+}
+ul li div:first-child{
+	width: 65px;
+	height: 65px;
+}
+
+ul li div:last-child{
+	/*width: 121px;*/
+	height: 65px;
+
+	width: 0;
+	-webkit-transition: width 0.8s;
+}
+
+.natpis {
+
+}
+
+.show {
+	width: 121px !important;
+	-webkit-transition: width 0.8s; /* For Safari 3.1 to 6.0 */
+}
